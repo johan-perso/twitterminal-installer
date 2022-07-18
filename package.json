@@ -1,6 +1,6 @@
 {
 	"name": "installer-twitterminal",
-	"version": "1.0.0",
+	"version": "6.0.0",
 	"description": "Permet de créé un installateur pour Twitterminal",
 	"main": "index.js",
 	"author": "JohanStickman",
