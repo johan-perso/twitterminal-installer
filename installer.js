@@ -8,7 +8,7 @@ const childProcess = require('child_process')
 const Downloader = require('nodejs-file-downloader')
 
 // Variables
-var uninstallerPathName="uninstaller-6.0.0.exe"
+var uninstallerLink="https://github.com/johan-perso/twitterminal-installer/releases/download/6.0.0/uninstaller-6.0.0.exe"
 
 // Si on est pas sous Windows
 if(os.platform() != 'win32'){
@@ -122,7 +122,7 @@ async function installTwitterminal(){
 	console.log("\nTéléchargement du désinstallateur...")
 	await new Downloader({
 		directory: pathToTwitterminal,
-		url: `https://firebasestorage.googleapis.com/v0/b/storage-bf183.appspot.com/o/twitterminal-installer%2F${uninstallerPathName}?alt=media`,
+		url: uninstallerLink,
 		filename: 'uninstaller.exe',
 		headers: { 'User-Agent': 'Twitterminal-Installer' }
 	}).download()
