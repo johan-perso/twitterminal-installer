@@ -1,4 +1,4 @@
-﻿
+
 # Vérifier si la commande "node" est présente
 if (Get-Command "node" -errorAction SilentlyContinue)
 {} else {
@@ -9,7 +9,7 @@ if (Get-Command "node" -errorAction SilentlyContinue)
 
 $ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://github.com/johan-perso/twitterminal/releases/download/6.0.0/installer-6.0.0.exe'
+$url        = 'https://github.com/johan-perso/twitterminal-installer/releases/download/6.0.0/installer-6.0.0.exe'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
