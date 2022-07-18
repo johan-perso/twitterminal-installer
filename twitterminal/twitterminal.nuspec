@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>twitterminal</id>
+    <version>6.0.0</version>
+    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl> -->
+    <owners>JohanStickman</owners>
+    <title>twitterminal (Install)</title>
+    <authors>JohanStickman</authors>
+    <projectUrl>https://github.com/johan-perso/twitterminal</projectUrl>
+    <!--<iconUrl>http://rawcdn.githack.com/__REPLACE_YOUR_REPO__/master/icons/twitterminal.png</iconUrl>-->
+    <copyright>2022</copyright>
+    <tags>twitter cli terminal</tags>
+    <summary>Twitterminal permet d'utiliser Twitter depuis un terminal</summary>
+    <description>Twitterminal est un CLI permettant d'utiliser Twitter depuis son terminal, tout en ayant la possibilité d'utiliser des comptes développeurs (ou compte utilisateur/régulier), sans jamais avoir à sortir du terminal.</description>
+    </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
