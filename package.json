@@ -1,0 +1,27 @@
+{
+	"name": "installer-twitterminal",
+	"version": "1.0.0",
+	"description": "Permet de créé un installateur pour Twitterminal",
+	"main": "index.js",
+	"author": "JohanStickman",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/johan-perso/twitterminal.git"
+	},
+	"bugs": {
+		"url": "https://github.com/johan-perso/twitterminal/issues"
+	},
+	"scripts": {
+		"build_installer": "pkg -t node14-win installer.js -o dist/installer.exe",
+		"build_uninstaller": "pkg -t node14-win uninstaller.js -o dist/uninstaller.exe",
+		"build": "npm run build_installer && npm run build_uninstaller"
+	},
+	"homepage": "https://github.com/johan-perso/twitterminal",
+	"dependencies": {
+		"lookpath": "^1.2.2",
+		"node-fetch": "2.6.7",
+		"nodejs-file-downloader": "^4.9.3",
+		"pkg": "^5.8.0"
+	}
+}
